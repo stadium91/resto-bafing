@@ -1,0 +1,278 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Réservations | Bistrot Le Bafing</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#1d1b19",
+                    "surface-container-lowest": "#0a0a0b",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#494643",
+                    "on-secondary-fixed-variant": "#474747",
+                    "secondary-fixed": "#C35B3E",
+                    "surface-container-high": "#1a1c1e",
+                    "on-primary": "#000000",
+                    "surface-container": "#121417",
+                    "on-secondary-container": "#C35B3E",
+                    "surface-container-highest": "#22252a",
+                    "error-container": "#410002",
+                    "surface-variant": "#2c2e33",
+                    "on-tertiary-container": "#fffbff",
+                    "inverse-primary": "#0061a4",
+                    "secondary-fixed-dim": "#C35B3E",
+                    "primary-fixed-dim": "#a2c9ff",
+                    "inverse-surface": "#e2e2e6",
+                    "surface-tint": "#C35B3E",
+                    "tertiary": "#d9c4b0",
+                    "on-primary-fixed-variant": "#004a7d",
+                    "secondary-container": "#2c2a00",
+                    "primary": "#C35B3E",
+                    "on-surface-variant": "#c4c6cf",
+                    "on-error-container": "#ffdad6",
+                    "primary-container": "#C35B3E",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#000000",
+                    "surface": "#0d1117",
+                    "inverse-on-surface": "#2f3033",
+                    "tertiary-fixed-dim": "#d9c4b0",
+                    "tertiary-container": "#4a4642",
+                    "outline": "#8e9199",
+                    "tertiary-fixed": "#f6e0cc",
+                    "background": "#0d1117",
+                    "on-secondary": "#000000",
+                    "surface-bright": "#1a1c1e",
+                    "on-primary-fixed": "#001d34",
+                    "outline-variant": "#44474e",
+                    "surface-dim": "#0d1117",
+                    "surface-container-low": "#1a1c1e",
+                    "secondary": "#C35B3E",
+                    "on-surface": "#e2e2e6",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#24201e",
+                    "primary-fixed": "#d1e4ff",
+                    "on-background": "#e2e2e6",
+                    "deep-blue": "#0a192f",
+                    "rich-black": "#050505",
+                    "mali-yellow": "#C35B3E"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .pattern-bg {
+            background-image: radial-gradient(rgba(249, 212, 35, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .form-input-dark {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(249, 212, 35, 0.1);
+            color: #e2e2e6;
+        }
+        .form-input-dark:focus {
+            border-color: #f9d423;
+            ring: 2px;
+            ring-color: rgba(249, 212, 35, 0.2);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-black pattern-bg antialiased">
+<!-- TopNavBar (Matches SCREEN_16) -->
+<header class="fixed top-0 w-full z-50 bg-rich-black/90 backdrop-blur-md border-b border-white/5">
+<nav class="flex justify-between items-center px-12 py-5 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/5 border border-primary/30 flex items-center justify-center rounded-lg bg-white">
+<img alt="Bistrot Le Bafing Logo" class="w-full h-full object-contain p-0.5" src="logo.jpg">
+</div>
+<div class="font-serif text-xl font-bold text-primary">Bistrot Le Bafing</div>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="index.html">Héritage</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="font-sans tracking-widest uppercase text-xs text-primary font-bold border-b-2 border-primary transition-all duration-300" href="reservations.html">Réservations</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">Galerie</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-black px-8 py-3 rounded-lg font-label uppercase tracking-widest text-[10px] font-extrabold hover:bg-white transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20">Réserver une table</button>
+</nav>
+</header>
+<main class="pt-32 pb-20">
+<!-- Hero & Reservation Grid -->
+<section class="max-w-screen-2xl mx-auto px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+<!-- Left Column: Visuals & Story -->
+<div class="lg:col-span-7 space-y-12">
+<div class="relative group overflow-hidden rounded-lg border border-white/5 shadow-2xl">
+<img class="w-full aspect-[16/10] object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Moody dark interior of a luxury restaurant with authentic Sahelian architectural patterns, warm yellow pin-spot lighting on textured mud-plaster walls and elegant tables." src="gallery3.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-rich-black via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-8 left-8">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary leading-tight">The Grand Hall</h2>
+<p class="text-on-surface-variant max-w-md mt-2 font-light">Expérience the fusion of Signature Sahelian Architecture and modern electric vibrance.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 border-t border-white/5">
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">schedule</span>
+<span class="font-label uppercase tracking-widest text-xs font-bold">Operating Hours</span>
+</div>
+<p class="text-2xl font-headline font-bold">Mon - Sat</p>
+<p class="text-on-surface-variant font-medium">18:00 — 23:00</p>
+<p class="text-sm text-on-surface/40">Closed on Sundays for private heritage events.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label uppercase tracking-widest text-xs font-bold">Atmosphere</span>
+</div>
+<p class="text-lg leading-relaxed text-on-surface-variant italic font-headline">"The Grand Hall features columns wrapped in hand-woven tribal fabrics, bathed in an amber glow that honors our ancestors."</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Booking Form -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<div class="bg-surface-container-low backdrop-blur-md p-8 md:p-10 rounded-lg border border-white/5 relative overflow-hidden">
+<!-- Accent Light -->
+<div class="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 blur-[80px]"></div>
+<header class="mb-10 text-center lg:text-left">
+<h1 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-4 tracking-tight">Secure Your Table</h1>
+<p class="text-on-surface-variant font-medium">Limited seating avadisponible pour une expérience électrique du Sahel.</p>
+</header>
+<form class="space-y-8">
+<div class="space-y-6">
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Full Name</label>
+<input class="w-full form-input-dark rounded-lg py-4 px-4 font-body text-sm placeholder:text-on-surface/20" placeholder="Ibrahim Traoré" type="text">
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Guests</label>
+<select class="w-full form-input-dark rounded-lg py-4 px-4 font-body text-sm cursor-pointer appearance-none bg-rich-black">
+<option>2 People</option>
+<option>4 People</option>
+<option>6 People</option>
+<option>8+ People</option>
+</select>
+</div>
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Date</label>
+<input class="w-full form-input-dark rounded-lg py-4 px-4 font-body text-sm cursor-pointer" type="date">
+</div>
+</div>
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Preferred Time</label>
+<div class="grid grid-cols-3 gap-3 pt-2">
+<button class="border border-white/10 rounded-lg py-3 text-xs font-bold hover:bg-primary hover:text-black transition-colors" type="button">18:30</button>
+<button class="bg-primary text-black rounded-lg py-3 text-xs font-bold" type="button">20:00</button>
+<button class="border border-white/10 rounded-lg py-3 text-xs font-bold hover:bg-primary hover:text-black transition-colors" type="button">21:30</button>
+</div>
+</div>
+<div>
+<label class="block font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Special Requests</label>
+<textarea class="w-full form-input-dark rounded-lg py-4 px-4 font-body text-sm placeholder:text-on-surface/20 resize-none" placeholder="Notes diététiques ou occasions spéciales..." rows="2"></textarea>
+</div>
+</div>
+<button class="w-full bg-primary text-black py-5 rounded-lg font-label uppercase tracking-widest text-xs font-extrabold hover:bg-white transition-all transform active:scale-95 shadow-xl shadow-primary/20 group" type="submit">
+                        Confirm Reservation
+                        <span class="inline-block transition-transform group-hover:translate-x-1 ml-2">→</span>
+</button>
+<p class="text-center text-[10px] text-on-surface/30 uppercase tracking-widest mt-6">Secure payment &amp; instant confirmation</p>
+</form>
+</div>
+</div>
+</section>
+<!-- Asymmetric Detail Section -->
+<section class="max-w-screen-2xl mx-auto px-12 mt-32 grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1">
+<div class="relative">
+<div class="absolute -inset-4 border border-primary/20 translate-x-4 translate-y-4 rounded-lg"></div>
+<img class="relative w-full h-[400px] object-cover rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Gros plan détaillé sur une texture traditionnelle de briques en terrend restaurant with contemporary warm lighting and luxury table settings." src="gallery3.jpg">
+</div>
+</div>
+<div class="order-1 md:order-2 space-y-8">
+<span class="font-label uppercase tracking-widest text-xs text-primary font-bold inline-block">The Expérience</span>
+<h3 class="text-5xl font-headline font-bold text-on-surface leading-tight">Authentic Ambiance.</h3>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body">Resto Bafing is more than a culinary destination; it is an architectural ode to the Sahel. Our 'Grand Hall' is constructed using ancient techniques, modernized with electric aesthetics to provide a moody, private, and high-energy dining environment.</p>
+<div class="flex gap-4">
+<span class="px-5 py-2 rounded-full border border-primary/20 text-[10px] font-label uppercase tracking-widest text-primary font-bold">Live Kora Music</span>
+<span class="px-5 py-2 rounded-full border border-primary/20 text-[10px] font-label uppercase tracking-widest text-primary font-bold">Private Dining</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Matches SCREEN_16) -->
+<footer class="w-full py-20 px-12 bg-rich-black text-on-surface border-t border-white/5">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-left">
+<div class="md:col-span-1">
+<div class="font-serif text-2xl text-primary mb-4">Bistrot Le Bafing</div>
+<p class="font-sans text-sm text-on-surface-variant mb-8 max-w-xs leading-relaxed">Preserving the culinary soul of Mali thà travers des expériences culinaires artisanales modernes dans un environnement intemporels elegance.</p>
+<div class="flex gap-4">
+<a class="text-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Arts Culinaires</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Spécialité du Chefties</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Menu Traditionnel</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Boissons Locales</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Espace Événementiel</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Design d'Intérieur</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Durabilité</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Politique de Confidentialité</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Mentions Légales</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Newsletter</h4>
+<p class="text-on-surface-variant text-sm mb-6">Join our circle for seasonal menu updates.</p>
+<div class="flex border-b border-primary/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-on-surface-variant/40" placeholder="Your Email Address" type="email">
+<button class="text-primary hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="tracking-tight text-xs text-on-surface-variant">© 2026 Bistrot Restaurant Le Bafing Bamako. Crafted with Héritage.</p>
+<div class="flex gap-8 text-xs tracking-widest uppercase font-bold text-primary">
+<span>BAMAKO</span>
+<span>MALI</span>
+</div>
+</div>
+</footer>
+</body></html>

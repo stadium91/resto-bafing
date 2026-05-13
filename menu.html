@@ -1,0 +1,252 @@
+<!DOCTYPE html><html class="light" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Menu - Resto Bafing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed": "#1d1b19",
+                      "on-primary": "#ffffff",
+                      "inverse-surface": "#313030",
+                      "tertiary": "#5f5b58",
+                      "surface-bright": "#fcf9f8",
+                      "surface": "#fcf9f8",
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed": "#e4e2e1",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#802a11",
+                      "on-tertiary-container": "#fffbff",
+                      "inverse-on-surface": "#f3f0ef",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#e4e2e1",
+                      "background": "#fcf9f8",
+                      "on-background": "#1c1b1b",
+                      "tertiary-fixed": "#e7e1dd",
+                      "surface-container-low": "#f6f3f2",
+                      "secondary": "#5f5e5e",
+                      "primary-fixed": "#ffdbd1",
+                      "surface-tint": "#9f4026",
+                      "surface-container-high": "#eae7e7",
+                      "surface-variant": "#e5e2e1",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-container": "#656464",
+                      "outline": "#89726c",
+                      "surface-container-highest": "#e5e2e1",
+                      "surface-container": "#f0eded",
+                      "primary-fixed-dim": "#ffb5a1",
+                      "primary": "#9c3e24",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#dcd9d9",
+                      "on-surface-variant": "#56423d",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "on-tertiary-fixed-variant": "#494643",
+                      "on-secondary-fixed-variant": "#474747",
+                      "on-surface": "#1c1b1b",
+                      "on-primary-fixed": "#3b0900",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#bc5639",
+                      "secondary-fixed-dim": "#c8c6c6",
+                      "tertiary-container": "#787470",
+                      "inverse-primary": "#ffb5a1",
+                      "on-primary-container": "#fffbff",
+                      "outline-variant": "#ddc0b9",
+                      "tertiary-fixed-dim": "#cbc6c1"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {},
+              "fontFamily": {
+                      "headline": [
+                              "Noto Serif"
+                      ],
+                      "body": [
+                              "Manrope"
+                      ],
+                      "label": [
+                              "Manrope"
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body antialiased selection:bg-primary-container selection:text-on-primary-container pattern-bg">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-rich-black/90 backdrop-blur-md border-b border-white/5">
+<nav class="flex justify-between items-center px-12 py-5 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/5 border border-primary/30 flex items-center justify-center rounded-lg bg-white">
+<img alt="Bistrot Le Bafing Logo" class="w-full h-full object-contain p-0.5" src="logo.jpg">
+</div>
+<div class="font-serif text-xl font-bold text-primary">Bistrot Le Bafing</div>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="index.html">Héritage</a>
+<a class="font-sans tracking-widest uppercase text-xs text-primary font-bold border-b-2 border-primary transition-all duration-300" href="menu.html">Menu</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="reservations.html">Réservations</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">Galerie</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-black px-8 py-3 rounded-lg font-label uppercase tracking-widest text-[10px] font-extrabold hover:bg-white transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20">Réserver une table</button>
+</nav>
+</header>
+<main class="pt-24 md:pt-32 pb-24">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[614px] flex items-center px-6 md:px-12 bg-surface">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-80 mix-blend-multiply" data-alt="close up of rustic authentable malienne authentique avec des assiettes traditionnelles en terre cuite et une lighting" src="gallery7.jpg">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto text-center mt-12 md:mt-24">
+<h1 class="font-headline text-5xl md:text-7xl font-black text-on-surface tracking-tighter mb-6 leading-tight">
+                    La Carte du <span class="text-primary block md:inline">Bafing</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed">A culinary journey through the heart of Mali. We honor authentic recipes passed down through generations, prepared with fire, patience, and locally sourced ingredients.</p>
+</div>
+</section>
+<!-- Menu Container -->
+<div class="max-w-screen-xl mx-auto px-6 md:px-12 mt-12 md:mt-24">
+<!-- Spécialité du Chef -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">Spécialité du Chef</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+<!-- Poulet à la Mangue (Featured) -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 relative flex flex-col h-full">
+<div class="h-64 overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Poulet à la Mangue succulent chicken dish cooked with fresh mango rich vibrant sauce top down view" src="gallery6.jpg">
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 font-label text-sm font-bold uppercase tracking-wider rounded">Signature</div>
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between bg-gradient-to-b from-transparent to-surface-container-low/30">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Poulet à la Mangue</h3>
+<span class="font-body text-lg font-semibold text-primary ml-4 shrink-0">3000F</span>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed">Tender pieces of chicken slow-cooked in a rich, sweet and savory mango sauce, infused with secret spices from the Bafing region. A delicate balance of heat and fruit.</p>
+</div>
+</div>
+</article>
+<!-- Capitaine Pané -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-500 relative flex flex-col h-full">
+<div class="h-64 overflow-hidden relative">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out" data-alt="Capitaine Pané" src="gallery7.jpg">
+</div>
+<div class="p-8 flex flex-col flex-grow justify-between bg-gradient-to-b from-transparent to-surface-container-low/30">
+<div>
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-headline text-2xl font-bold text-on-surface">Capitaine Pané</h3>
+<span class="font-body text-lg font-semibold text-primary ml-4 shrink-0">3000F</span>
+</div>
+<p class="font-body text-on-surface-variant leading-relaxed mt-4">Crisp, golden-fried fillet of Capitaine fish, caught fresh from the Niger River. Served with a tangy laïoli citron-herbes et un accompagnement de riz épicé traditionnel.</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Plats Traditionnels -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">local_dining</span>
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">Plats Traditionnels</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Poulet Yassa -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Poulet Yassa marinated chicken with caramelized onions served over rice warm lighting" src="gallery5.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-xl font-bold text-on-surface">Poulet Yassa</h3>
+<span class="font-body text-md font-semibold text-primary">3000F</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm flex-grow">Classic West African comfort. Chicken deeply marinated in lemon and mustard, slow-braised with masses of caramelized onions.</p>
+</div>
+</article>
+<!-- Fakouye -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Authentic Fakouye ricsauce aux herbes foncée servie dans un bol traditionnel au style rustique" src="gallery2.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-xl font-bold text-on-surface">Fakouye</h3>
+<span class="font-body text-md font-semibold text-primary">1000F</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm flex-grow">Une spécialité du Nord du Mali. Riche, sombre, terrhy sauce made from the leaves of the Corchorus olitorius plant, served with tender meat.</p>
+</div>
+</article>
+<!-- Fonio Simple -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden group flex flex-col hover:border-primary/30 transition-colors border border-surface-variant/30">
+<div class="h-48 overflow-hidden">
+<img alt="" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fonio Simple" src="gallery4.jpg">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-baseline mb-3">
+<h3 class="font-headline text-xl font-bold text-on-surface group-hover:text-primary transition-colors">Fonio Simple</h3>
+<span class="font-body text-md font-semibold text-on-surface-variant">Base</span>
+</div>
+<p class="font-body text-on-surface-variant text-sm flex-grow">The ancient grain of the Sahel. Light, fluffy, and highly nutritious. The perfect accompaniment to any of our rich sauces.</p>
+</div>
+</article>
+</div>
+</section>
+<!-- Boissons Locales -->
+<section class="mb-16">
+<div class="flex items-center gap-4 mb-12 border-b border-surface-variant pb-4">
+<span class="material-symbols-outlined text-tertiary text-3xl" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface">Boissons Locales</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<article class="flex justify-between items-center p-6 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Dableni <span class="text-sm font-normal text-on-surface-variant">(Fleurs d'hibiscus)</span></h3>
+</div>
+<div class="font-body text-lg font-semibold text-primary">300F</div>
+</article>
+<article class="flex justify-between items-center p-6 bg-surface-container-low rounded-lg hover:bg-surface-container transition-colors">
+<div>
+<h3 class="font-headline text-xl font-bold text-on-surface">Gnamacou <span class="text-sm font-normal text-on-surface-variant">(Gingembre)</span></h3>
+</div>
+<div class="font-body text-lg font-semibold text-primary">300F</div>
+</article>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-20 pb-10 px-6 md:px-12 border-t border-white/5 bg-neutral-950 dark:bg-black">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+<div>
+<div class="text-2xl font-headline font-bold text-yellow-400 dark:text-yellow-300 mb-4">Resto Bafing</div>
+<p class="text-white/60 font-body text-sm leading-relaxed max-w-xs">Bringing the electric energy and ancient flavors of the Sahel to your table.</p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body text-sm text-white/40 dark:text-white/30 hover:text-yellow-400 dark:hover:text-yellow-300 transition-colors ease-in-out duration-300 hover:translate-x-1 w-fit" href="#">Politique de Confidentialité</a>
+<a class="font-body text-sm text-white/40 dark:text-white/30 hover:text-yellow-400 dark:hover:text-yellow-300 transition-colors ease-in-out duration-300 hover:translate-x-1 w-fit" href="#">Conditions de Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body text-sm text-white/40 dark:text-white/30 hover:text-yellow-400 dark:hover:text-yellow-300 transition-colors ease-in-out duration-300 hover:translate-x-1 w-fit" href="#">Durabilité</a>
+<a class="font-body text-sm text-white/40 dark:text-white/30 hover:text-yellow-400 dark:hover:text-yellow-300 transition-colors ease-in-out duration-300 hover:translate-x-1 w-fit" href="#">Accessibilité</a>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-16 pt-8 border-t border-white/10 text-center md:text-left">
+<p class="text-white/40 font-body text-sm">© 2024 Resto Bafing. The Electric Sahel Expérience.</p>
+</div>
+</footer>
+</body></html>

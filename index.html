@@ -1,243 +1,342 @@
 <!DOCTYPE html><html class="scroll-smooth" lang="fr"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Resto Bafing | Bamako</title>
-<link rel="icon" type="image/png" href="logo.png">
-<link rel="shortcut icon" href="logo.png">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<title>Bistrot Restaurant Le Bafing | Héritage Malien &amp; Excellence Culinairelence</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-surface": "#1b1c1a",
-                        "primary": "#410324",
-                        "inverse-on-surface": "#f2f0ed",
-                        "on-error-container": "#93000a",
-                        "surface-container-low": "#f5f3ef",
-                        "on-secondary-container": "#725000",
-                        "on-primary-fixed": "#3d0122",
-                        "on-tertiary": "#ffffff",
-                        "error": "#ba1a1a",
-                        "secondary-fixed": "#ffdea8",
-                        "on-tertiary-container": "#ae9698",
-                        "on-tertiary-fixed": "#261819",
-                        "primary-container": "#5c1a3a",
-                        "inverse-primary": "#ffb0ce",
-                        "secondary-container": "#fcc355",
-                        "on-secondary-fixed": "#271900",
-                        "on-primary-container": "#d881a4",
-                        "on-secondary": "#ffffff",
-                        "on-surface-variant": "#524348",
-                        "background": "#fbf9f5",
-                        "tertiary-container": "#402f31",
-                        "surface-container": "#efeeea",
-                        "surface-container-high": "#eae8e4",
-                        "secondary": "#7c5800",
-                        "on-primary-fixed-variant": "#742e4e",
-                        "surface-variant": "#e4e2de",
-                        "error-container": "#ffdad6",
-                        "primary-fixed": "#ffd9e5",
-                        "on-secondary-fixed-variant": "#5e4200",
-                        "outline": "#857278",
-                        "on-background": "#1b1c1a",
-                        "primary-fixed-dim": "#ffb0ce",
-                        "secondary-fixed-dim": "#f6bd50",
-                        "tertiary-fixed-dim": "#dac0c2",
-                        "surface-dim": "#dbdad6",
-                        "surface-container-highest": "#e4e2de",
-                        "inverse-surface": "#30312e",
-                        "surface-tint": "#914566",
-                        "surface-bright": "#fbf9f5",
-                        "tertiary": "#291a1c",
-                        "on-error": "#ffffff",
-                        "on-tertiary-fixed-variant": "#554244",
-                        "outline-variant": "#d7c1c7",
-                        "tertiary-fixed": "#f7dcde",
-                        "surface": "#fbf9f5",
-                        "surface-container-lowest": "#ffffff",
-                        "on-primary": "#ffffff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "display": ["Noto Serif"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    }
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#1d1b19",
+                    "surface-container-lowest": "#0a0a0b",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#494643",
+                    "on-secondary-fixed-variant": "#474747",
+                    "secondary-fixed": "#f9d423",
+                    "surface-container-high": "#1a1c1e",
+                    "on-primary": "#000000",
+                    "surface-container": "#121417",
+                    "on-secondary-container": "#f9d423",
+                    "surface-container-highest": "#22252a",
+                    "error-container": "#410002",
+                    "surface-variant": "#2c2e33",
+                    "on-tertiary-container": "#fffbff",
+                    "inverse-primary": "#0061a4",
+                    "secondary-fixed-dim": "#e2c01d",
+                    "primary-fixed-dim": "#a2c9ff",
+                    "inverse-surface": "#e2e2e6",
+                    "surface-tint": "#f9d423",
+                    "tertiary": "#d9c4b0",
+                    "on-primary-fixed-variant": "#004a7d",
+                    "secondary-container": "#2c2a00",
+                    "primary": "#f9d423",
+                    "on-surface-variant": "#c4c6cf",
+                    "on-error-container": "#ffdad6",
+                    "primary-container": "#e2c01d",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#000000",
+                    "surface": "#0d1117",
+                    "inverse-on-surface": "#2f3033",
+                    "tertiary-fixed-dim": "#d9c4b0",
+                    "tertiary-container": "#4a4642",
+                    "outline": "#8e9199",
+                    "tertiary-fixed": "#f6e0cc",
+                    "background": "#0d1117",
+                    "on-secondary": "#000000",
+                    "surface-bright": "#1a1c1e",
+                    "on-primary-fixed": "#001d34",
+                    "outline-variant": "#44474e",
+                    "surface-dim": "#0d1117",
+                    "surface-container-low": "#1a1c1e",
+                    "secondary": "#f9d423",
+                    "on-surface": "#e2e2e6",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#24201e",
+                    "primary-fixed": "#d1e4ff",
+                    "on-background": "#e2e2e6",
+                    "deep-blue": "#0a192f",
+                    "rich-black": "#050505",
+                    "mali-yellow": "#f9d423"
             },
-        }
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
     </script>
 <style>
         .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        .arch-mask {
-            border-top-left-radius: 200px;
-            border-top-right-radius: 200px;
+        .text-bleed {
+            letter-spacing: -0.02em;
         }
-        .editorial-float {
-            transform: translateY(-20%);
+        .glass-nav {
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
         }
-        .ambient-shadow {
-            box-shadow: 0 40px 60px -15px rgba(27, 28, 26, 0.04);
+        .pattern-bg {
+            background-image: radial-gradient(rgba(249, 212, 35, 0.05) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
         }
     </style>
 </head>
-<body class="bg-surface font-body text-on-surface">
-<!-- TopAppBar -->
-<header class="fixed top-0 w-full z-50 px-8 py-6 bg-[#fbf9f5]/80 backdrop-blur-3xl shadow-[0_40px_60px_-15px_rgba(0,0,0,0.04)]">
-<nav class="flex justify-between items-center max-w-screen-2xl mx-auto">
-<a href="index.html" class="flex items-center">
-    <img src="logo.png" alt="Resto Bafing Logo" class="h-12 w-auto">
-</a>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-primary font-semibold border-b-2 border-secondary-container pb-1 text-sm tracking-widest uppercase" href="#">Notre Histoire</a>
-<a class="text-primary/70 hover:text-primary transition-colors text-sm tracking-widest uppercase" href="#">Pâtisserie</a>
-<a class="text-primary/70 hover:text-primary transition-colors text-sm tracking-widest uppercase" href="#">Menu</a>
-<a class="text-primary/70 hover:text-primary transition-colors text-sm tracking-widest uppercase" href="#">Expériences</a>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-black pattern-bg">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-rich-black/90 backdrop-blur-md border-b border-white/5">
+<nav class="flex justify-between items-center px-12 py-5 w-full max-w-screen-2xl mx-auto">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/5 border border-primary/30 flex items-center justify-center rounded-lg">
+<img alt="Bistrot Le Bafing Logo" class="w-full h-full object-contain p-0.5" src="logo.jpg">
 </div>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-md font-semibold hover:bg-primary-container transition-all active:scale-95 duration-300 ease-in-out">
-                Réserver une table
-            </button>
+<div class="font-serif text-xl font-bold text-primary">Bistrot Le Bafing</div>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="font-sans tracking-widest uppercase text-xs text-primary font-bold border-b-2 border-primary transition-all duration-300" href="index.html">Héritage</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="reservations.html">Réservations</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">The Space</a>
+<a class="font-sans tracking-widest uppercase text-xs text-on-surface/70 hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-black px-8 py-3 rounded-lg font-label uppercase tracking-widest text-[10px] font-extrabold hover:bg-white transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20">Réserver une table</button>
 </nav>
 </header>
 <main>
 <!-- Hero Section -->
-<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
-<div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-6 z-10">
-<h1 class="text-7xl md:text-8xl font-headline text-primary leading-tight mb-8">L'âme authentique de Bamako</h1>
-<p class="text-xl text-on-surface-variant max-w-md leading-relaxed mb-10">
-                        L'art des cuisines libanaise et française, réimaginé pour le palais exigeant de Bamako.
-                    </p>
-<div class="flex items-center space-x-6">
-<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-md font-bold tracking-wide">
-                            VOIR LE MENU
-                        </button>
-<a class="text-primary font-bold border-b-2 border-transparent hover:border-secondary transition-all" href="#">Notre Héritage</a>
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden bg-deep-blue">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-deep-blue via-deep-blue/60 to-transparent z-10"></div>
+<img alt="Intérieur du Resto Bafing" class="w-full h-full object-cover opacity-50" src="hero.jpg">
+</div>
+<div class="container mx-auto px-12 relative z-20">
+<div class="max-w-3xl">
+<span class="inline-block font-label uppercase tracking-[0.4em] text-xs text-primary mb-6 font-bold">L'Atypical de Bamako</span>
+<h1 class="font-headline text-7xl md:text-8xl text-on-surface leading-[1.1] mb-8 text-bleed font-bold">
+                    Art <br>Culinaire
+<span class="italic text-primary">Héritage.</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-12 leading-relaxed">bienvenue to Bistrot Restaurant Le Bafing. Découvrez un sanctuaire de la culture malienne où les bois traditionnelsden masks watch over guests in a room adorned with yellow and black tribal fabrics.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-black px-10 py-5 rounded-lg font-label uppercase tracking-widest text-xs font-extrabold hover:bg-white transition-all shadow-xl shadow-primary/20">Explore the Menu</button>
+<button class="flex items-center gap-4 px-10 py-5 font-label uppercase tracking-widest text-xs font-bold text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: &quot;FILL&quot; 1;">play_circle</span>
+                        The Bafing Vibe
+                    </button>
 </div>
 </div>
-<div class="lg:col-span-6 relative">
-<div class="arch-mask overflow-hidden ambient-shadow w-full aspect-[4/5] bg-surface-container-low">
-<img class="w-full h-full object-cover" data-alt="Gourmet fusion dish featuring vibrant vegetables and artisanal sauces on a handcrafted ceramic plate, warm cinematic lighting" src="screen.png">
 </div>
-<div class="absolute -bottom-12 -left-12 w-64 h-64 arch-mask overflow-hidden ambient-shadow border-[12px] border-surface hidden md:block">
-<img class="w-full h-full object-cover" data-alt="Exquisite Lebanese houmous swirled with olive oil and topped with toasted pine nuts and fresh herbs" src="screen1.png">
-</div>
-</div>
+<div class="absolute bottom-12 right-12 hidden lg:flex flex-col items-center gap-8">
+<div class="h-24 w-px bg-primary/30"></div>
+<span class="vertical-text font-label uppercase tracking-widest text-[10px] rotate-180 mb-4 text-primary">Est. Bamako</span>
+<a class="text-on-surface/50 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-xl">camera</span></a>
 </div>
 </section>
-<!-- The Menu (Editorial Bento Grid) -->
-<section class="py-32 bg-surface-container-low">
-<div class="container mx-auto px-8">
-<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-<div>
-<span class="text-secondary font-bold tracking-widest uppercase text-sm block mb-4">La Sélection</span>
-<h2 class="text-5xl font-headline text-primary">Une Éphémère Sensorielle</h2>
+<!-- Menu Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex justify-between items-end mb-20 border-b border-white/5 pb-12">
+<div class="max-w-xl">
+<h2 class="font-headline text-5xl text-on-surface mb-6 font-bold">La Carte du Bafing</h2>
+<p class="text-on-surface-variant font-body">Des saveurs maliennes raffinées servies dans un environnent of rustic murals and tribal elegance.</p>
 </div>
-<p class="text-on-surface-variant max-w-xs text-sm leading-relaxed">
-                        Naviguez dans notre paysage culinaire via notre tablette - menus numériques de style, alliant héritage et grâce moderne.
-                    </p>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">west</span>
+</div>
+<div class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary cursor-pointer hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined">east</span>
+</div>
+</div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<!-- Column 1: Savory -->
-<div class="space-y-16">
-<div class="group">
-<div class="aspect-square arch-mask overflow-hidden mb-8 ambient-shadow bg-surface">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Fresh vibrant Lebanese salad with pomegranate seeds and sumac dusting in an organic ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPEMQjD7z4ROuYV8NFAuEpwrWPut_b7Wz1WODBozyyWvNmbME-A2LK7x3UBeOQzHDX-8vyF9O3DEqup_k95ZaG1uTfnr2JGgPdJ5GA2TvJqT2tqNxMfFtfGEK2OPi2gvCCObHzNH5ES-Z5wLe0ow_KIZsxDuwFEQNUmnChYVhyBr-aLvTVGLpLSpC0GoBVovD9jDQt3MaYkgaOA_KBbyJn4uL3Z2RTwkv4kFWVdSkGnz-xdoqmceeGwvccncUdgblDIq_rxK0lpJ0g">
+<!-- Spécialité du Chef -->
+<div class="space-y-10">
+<div class="flex items-center gap-4">
+<span class="w-8 h-px bg-primary"></span>
+<h3 class="font-label uppercase tracking-[0.2em] text-sm text-primary font-bold">Spécialité du Chef</h3>
 </div>
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="text-2xl font-headline text-primary">Houmous Royale</h3>
-<span class="font-body text-sm text-secondary">6,500 CFA</span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed">Purée de pois chiches soyeuse, tahini, citron et couronne d'agneau sauté.</p>
-</div>
-<div class="group pt-8">
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="text-2xl font-headline text-primary">Foul Moudamas</h3>
-<span class="font-body text-sm text-secondary">5,000 CFA</span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed">Fèves mijotées, ail, citron et huile d'olive de qualité supérieure.</p>
-</div>
-</div>
-<!-- Column 2: Patisserie (Shifted Down) -->
-<div class="space-y-16 md:pt-24">
-<div class="p-12 bg-surface-container-lowest ambient-shadow rounded-xl">
-<span class="text-secondary text-xs tracking-widest uppercase block mb-6">Signature</span>
-<h3 class="text-3xl font-headline text-primary mb-4 italic">Gâteaux au Chocolat</h3>
-<p class="text-on-surface-variant text-sm mb-8 leading-relaxed">Un chef-d'œuvre à plusieurs couches de cacao noir Valrhona et de fleur de sel.</p>
-<div class="aspect-[3/4] arch-mask overflow-hidden ambient-shadow">
-<img class="w-full h-full object-cover" data-alt="Rich dark chocolate layer cake with glossy ganache drip on an elegant marble stand" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpIXDi852H3ttbCvZjh1_odmQ_eTh0KyWe2NxmJA-wby4H0VA5zvvAiIMLDUUgmmJFxnVBc4-w9SWIf8mxEqKrMqF4iAO325XuuVAb335idUAU3B75mVIMoGZnxjR9nnvPhD3QIqnVCYdxFPJRrPVeAG0fjL2BMAqlqIuvo7zdEh7bnt6gzSUdz6yFhkL3ufxPj-H5WZkDt28ACBIfv7i2UmVFeZ2X5zK17rRY0bBVp-GPKZYLTjwFKtjNzMbtqAdHF1fpWYxv-a9F">
-</div>
-</div>
-</div>
-<!-- Column 3: Refreshments -->
-<div class="space-y-16">
-<div class="group">
-<div class="aspect-square arch-mask overflow-hidden mb-8 ambient-shadow bg-surface">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Refreshing tall glass of chilled mint lemonade with fresh ice and citrus slices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxtR5XBvIhAq-F6teN9SKirhI7BDBGJnba3dfapXk34FpzHhY8zq9B73kz33SfcCCnhzU4cAZw-trdic-RmmNIOBjIqUZmCQLXevcJ_rEzAAEYKDNT0GNEOK6l6IHM5GOXv8kOwB_0C1PDSut6y6Ykt3nZMCvkb-viJF1EqKVRAmDTOKKBzp8WAFSnf-7ieA_qao-G91Zs3n78tIxE9-EkpFY-5HQOLwzU4m2YbDoyRhl3Cel2n1QH1V4bnvmaAQioBWGLmBJul068">
-</div>
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="text-2xl font-headline text-primary">Jus Frais</h3>
-<span class="font-body text-sm text-secondary">3,500 CFA</span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed">Fruits de saison pressés à froid des marchés locaux de Bamako.</p>
-</div>
-<div class="group pt-8">
-<div class="flex justify-between items-baseline mb-2">
-<h3 class="text-2xl font-headline text-primary">Pâtisseries Artisanales</h3>
-<span class="font-body text-sm text-secondary">À partir de 2,500 CFA</span>
-</div>
-<p class="text-on-surface-variant text-sm leading-relaxed">Croissants au beurre français et Ma'amoul libanais faits à la main tous les jours.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Spaces -->
-<section class="py-32 bg-surface overflow-hidden">
-<div class="container mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-<div class="relative w-full h-[600px]">
-<div class="absolute top-0 left-0 w-3/4 h-[500px] arch-mask overflow-hidden ambient-shadow z-10">
-<img class="w-full h-full object-cover" data-alt="Terrasse Jardin" src="screen2.png">
-</div>
-<div class="absolute bottom-0 right-0 w-2/3 h-[400px] arch-mask overflow-hidden ambient-shadow border-8 border-surface z-20">
-<img class="w-full h-full object-cover" data-alt="Grand Salon" src="screen3.png">
-</div>
-<div class="absolute top-1/2 -right-4 md:-right-12 w-40 h-40 md:w-48 md:h-48 rounded-full bg-secondary-container flex items-center justify-center p-6 md:p-8 text-center text-on-secondary-container font-headline text-base md:text-lg italic shadow-xl z-30">
-                            Terrasse ou Intérieur
-                        </div>
-</div>
-<div class="lg:pl-12">
-<h2 class="text-6xl font-headline text-primary mb-12">Les Espaces</h2>
-<p class="text-xl text-on-surface-variant mb-12 leading-relaxed italic">
-                            "On peut y trouver à manger de tout genre. Propre, c'est l'un de mes endroits préférés. Vous pouvez manger sur la terrasse où à l'intérieur."
-                        </p>
 <div class="space-y-12">
-<div class="flex items-start space-x-6">
-<span class="material-symbols-outlined text-secondary text-3xl">deck</span>
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Poulet à la Mangue</h4>
+<span class="text-primary font-bold">3,000F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Signature fusion of tender chicken and seasonal mango glaze.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Capitaine Pané</h4>
+<span class="text-primary font-bold">3,000F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Crispy breaded river fish served with house-made tartar sauce.</p>
+</div>
+</div>
+</div>
+<!-- Plats Traditionnels -->
+<div class="space-y-10">
+<div class="flex items-center gap-4">
+<span class="w-8 h-px bg-primary"></span>
+<h3 class="font-label uppercase tracking-[0.2em] text-sm text-primary font-bold">Plats Traditionnels</h3>
+</div>
+<div class="space-y-12">
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Poulet Yassa</h4>
+<span class="text-primary font-bold">3,000F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Marinated chicken with onions, lemon, and olives.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Fonio Simple</h4>
+<span class="text-primary font-bold">—</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Traditional ancient grain steamed to perfection.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Fakouye</h4>
+<span class="text-primary font-bold">1,000F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Spécialité du Nord du Mali à base de Corchorus leaves.</p>
+</div>
+</div>
+</div>
+<!-- Boissons Locales -->
+<div class="space-y-10">
+<div class="flex items-center gap-4">
+<span class="w-8 h-px bg-primary"></span>
+<h3 class="font-label uppercase tracking-[0.2em] text-sm text-primary font-bold">Boissons Locales</h3>
+</div>
+<div class="space-y-12">
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Dableni</h4>
+<span class="text-primary font-bold">300F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Hibiscus flower infusion, refreshing and vibrant.</p>
+</div>
+<div class="group cursor-pointer">
+<div class="flex justify-between items-baseline mb-2">
+<h4 class="font-headline text-2xl group-hover:text-primary transition-colors">Gnamacou</h4>
+<span class="text-primary font-bold">300F</span>
+</div>
+<p class="text-on-surface-variant text-sm font-light italic">Fiery ginger drink, cold-pressed with local spice.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interior/Vibe Section -->
+<section class="py-32 px-12 bg-surface-container-low border-y border-white/5">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-6 pt-12">
+<div class="relative group">
+<img alt="Décor intérieur authentique" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery3.jpg">
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+</div>
+<div class="relative group">
+<img alt="Motifs maliens et art mural" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery5.jpg">
+</div>
+<div class="relative group">
+<img alt="Configuration de salle à manger traditionnelle" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery3.jpg">
+</div>
+</div>
+<div class="space-y-6">
+<div class="relative group">
+<img alt="Masques africains en bois" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery7.jpg">
+</div>
+<div class="relative group">
+<img alt="Bar du restaurant et verrerie" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery5.jpg">
+</div>
+<div class="relative group">
+<img alt="Ambiance de la salle à manger" class="w-full h-auto rounded-lg shadow-2xl border-4 border-rich-black" src="gallery8.jpg">
+</div>
+</div>
+</div>
+<!-- Decorative Circle -->
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
+</div>
+<div class="space-y-10">
 <div>
-<h4 class="text-xl font-headline text-primary mb-2">Terrasse Jardin</h4>
-<p class="text-on-surface-variant">Une évasion luxuriante et aérée pour le café du matin ou les cocktails du soir.</p>
+<span class="font-label uppercase tracking-widest text-xs text-primary font-bold mb-4 inline-block">The Atmosphere</span>
+<h2 class="font-headline text-5xl md:text-6xl text-on-surface leading-tight font-bold">An Earthbound Sanctuary.</h2>
 </div>
+<div class="relative mb-8 rounded-xl overflow-hidden shadow-2xl border border-white/10 h-64">
+<img alt="Vue intérieure atmosphérique" class="w-full h-full object-cover" src="gallery5.jpg">
 </div>
-<div class="flex items-start space-x-6">
-<span class="material-symbols-outlined text-secondary text-3xl">weekend</span>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">
+                    At Bistrot Le Bafing, every architectural detail is a tribute to Mali. Our columns are wrapped in hand-woven <span class="text-primary italic">yellow and black tribal fabrics</span>, creating a rhythmic bridge between the past and present.
+                </p>
+<p class="text-on-surface-variant font-body text-lg leading-relaxed">Entourez-vous de masques africains traditionnels en bois et de murs rustiques qui racontent notre histoire. L'atmosphère est conçue pourr those who appreciate the atypical, the authentic, and the artisanal.</p>
+<div class="pt-6 grid grid-cols-3 gap-8">
 <div>
-<h4 class="text-xl font-headline text-primary mb-2">Grand Salon</h4>
-<p class="text-on-surface-variant">Spacieux et climatisé, idéal pour les rendez-vous d'affaires ou les réunions de famille.</p>
+<div class="text-3xl font-headline font-bold text-primary mb-1">01</div>
+<div class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Ambiance Unique</div>
+</div>
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-1">100%</div>
+<div class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Artisanat Authentique</div>
+</div>
+<div>
+<div class="text-3xl font-headline font-bold text-primary mb-1">3kF</div>
+<div class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant font-bold">Spécialité du Chef</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-screen-2xl mx-auto">
+<div class="text-center mb-24">
+<h2 class="font-headline text-5xl text-on-surface font-bold">Réflexions des Clients</h2>
+<div class="w-24 h-1 bg-primary mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div class="bg-surface-container-highest p-16 rounded-lg relative border border-white/5">
+<span class="material-symbols-outlined absolute top-12 left-12 text-6xl text-primary/10">format_quote</span>
+<div class="relative z-10">
+<p class="font-headline text-3xl italic text-on-surface mb-10 leading-snug">"Que de bons moments au Baffing... Une cuisine très simple... tellement de gentillesse et de saveur."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-black">ML</div>
+<div>
+<div class="font-bold text-on-surface">Moussa L.</div>
+<div class="text-xs font-label uppercase tracking-widest text-primary">Visiteur Fréquent</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-highest p-16 rounded-lg relative md:translate-y-12 border border-white/5">
+<span class="material-symbols-outlined absolute top-12 left-12 text-6xl text-primary/10">format_quote</span>
+<div class="relative z-10">
+<p class="font-headline text-3xl italic text-on-surface mb-10 leading-snug">"Le meilleur resto qualité prix de bamako. Simple, atypical, and absolutely delicious."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-bold text-black">SC</div>
+<div>
+<div class="font-bold text-on-surface">Sarah C.</div>
+<div class="text-xs font-label uppercase tracking-widest text-primary">Food Enthusiast</div>
 </div>
 </div>
 </div>
@@ -245,99 +344,89 @@
 </div>
 </div>
 </section>
-<!-- Galerie Resto Bafing -->
-<section class="py-32 bg-surface-container-low">
-<div class="container mx-auto px-8">
-<div class="text-center mb-16">
-<span class="text-secondary font-bold tracking-widest uppercase text-sm block mb-4">Atmosphère</span>
-<h2 class="text-5xl font-headline text-primary">Galerie Resto Bafing</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="arch-mask overflow-hidden ambient-shadow h-[400px]">
-<img alt="Atmosphère 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="screen4.png">
-</div>
-<div class="overflow-hidden ambient-shadow rounded-2xl h-[400px] md:mt-16">
-<img alt="Atmosphère 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkO_j05AmO4hxXhXVhfx1hfzFHw6eK9btIovTV6Kve4XhcoBzA4OAuKTJj1dcpit3CVkMfe9Ulif5C_vdks0wf-lbZ2ajZgFtqAPS5NhGhXTX6MDFSSCTYAg73jxaJh_cVnxyLkeBUtgACfZvn1AnT-D9Ba0SyGZ7_-ExXrYazIM3kLtGbYkEQ_RnazXy63JXi8xcXjguhL999QiRSomEowjzAuoK-r4-jeStJ4itpBwGRmc3cb9iM1RffXwjQC1U15PhuyvVTIVhb">
-</div>
-<div class="arch-mask overflow-hidden ambient-shadow h-[400px]">
-<img alt="Atmosphère 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700" src="screen5.png">
+<!-- Location Section -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5">
+<h2 class="font-headline text-5xl text-on-surface mb-8 font-bold">Find Us in Bamako</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Our Location</h4>
+<p class="text-on-surface-variant font-body">District de Bamako, Mali. The authentic heart of the Bafing district.</p>
 </div>
 </div>
-</div>
-</section>
-<!-- Testimonials/Quote -->
-<section class="py-24 bg-surface-container-high relative overflow-hidden">
-<div class="container mx-auto px-8 text-center max-w-4xl">
-<span class="material-symbols-outlined text-6xl text-secondary/30 mb-8" style="font-variation-settings: 'FILL' 1;">format_quote</span>
-<h3 class="text-4xl md:text-5xl font-headline text-primary italic leading-tight mb-12">
-                    "Les gâteaux au chocolat sont très bons."
-                </h3>
-<div class="w-16 h-1 bg-secondary mx-auto"></div>
-</div>
-</section>
-<!-- Location/Action -->
-<section class="py-32 bg-surface">
-<div class="container mx-auto px-8">
-<div class="bg-primary rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
-<div class="md:w-1/2 p-16 flex flex-col justify-center">
-<h2 class="text-4xl font-headline text-on-primary mb-6">Rejoignez-nous à Bamako</h2>
-<p class="text-on-primary-container text-lg mb-10">Découvrez l'intersection de la tradition et du luxe. Nous avons hâte de vous accueillir.</p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-md font-bold flex items-center justify-center space-x-3" href="https://wa.me/22366721139" target="_blank">
-<span class="material-symbols-outlined">chat</span>
-<span>RÉSERVER SUR WHATSAPP</span>
-</a>
-<a class="border border-on-primary-container text-on-primary px-8 py-4 rounded-md font-bold flex items-center justify-center space-x-3" href="tel:+22366721139">
-<span class="material-symbols-outlined">call</span>
-<span>66 72 11 39</span>
-</a>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Service Hours</h4>
+<p class="text-on-surface-variant font-body">Mon - Sat: 11:00 AM - 11:00 PM<br>Sun: 12:00 PM - 10:00 PM</p>
 </div>
 </div>
-<div class="md:w-1/2 h-96 md:h-auto bg-surface-container-highest">
-<div class="w-full h-full grayscale opacity-80" data-location="Bamako" style="">
-<img class="w-full h-full object-cover" data-alt="Abstract minimalist map texture with subtle geometric lines and warm earth tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW9h9wsfxdtIyMovCBuiromwpOOLCIVlKPPKr4zwVR9ZQxDQaDB0Ads1TTiht9R9lG-GYspS2M1mb3eTjMfgk7CriKFW7ZTMW7GP_ESHuM6ga26dcl_7DEd-u5yS9NNMRWlU7NxuhTYGAZtam8Cc12VZbo9K5h9Ylrrlw5pG2zNi_x3aWrx6Xd7kUQ_3Ww9xzbkU57unkHQupx_aKLL7P5C09S-8oOj0pPGKdu-U4S3CWcUKhGmvDPl9G5mqMVH9y8Mq5SG3MRHUtv">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1">Réservations</h4>
+<p class="text-on-surface-variant font-body">+223 20 00 00 00<br>contact@lebafing.ml</p>
 </div>
 </div>
+</div>
+</div>
+<div class="lg:col-span-7 bg-rich-black rounded-xl overflow-hidden h-[500px] shadow-2xl relative border border-white/5">
+<img alt="Carte de Bamako montrant Le Bafing" class="w-full h-full object-cover" src="gallery2.jpg">
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full pt-24 pb-12 px-12 bg-surface-container-low border-t border-primary/5">
-<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="space-y-6">
-<div class="text-xl font-headline text-primary">Resto Bafing</div>
-<p class="text-xs font-body leading-relaxed text-primary/60">
-                    Une Éphémère Sensorielle.<br>
-                    Créé par Sel &amp; Miel.<br>
-                    Bamako, Mali.
-                </p>
-</div>
-<div class="flex flex-col space-y-4">
-<span class="text-primary font-bold text-xs uppercase tracking-widest">Héritage</span>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Dîner Privé</a>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Héritage Artisanal</a>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Kit Presse</a>
-</div>
-<div class="flex flex-col space-y-4">
-<span class="text-primary font-bold text-xs uppercase tracking-widest">Contact</span>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Contactez-nous</a>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Mentions Légales</a>
-<a class="text-xs font-body text-primary/60 hover:text-secondary transition-colors duration-500" href="#">Instagram</a>
-</div>
-<div class="space-y-6">
-<span class="text-primary font-bold text-xs uppercase tracking-widest">Réserver</span>
-<div class="bg-surface-container-high p-4 rounded-lg">
-<p class="text-[10px] text-primary/40 uppercase tracking-tighter mb-1">Ligne Directe</p>
-<p class="text-sm font-bold text-primary">66 72 11 39</p>
+<footer class="w-full py-20 px-12 bg-rich-black text-on-surface">
+<div class="max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 text-left">
+<div class="md:col-span-1">
+<div class="font-serif text-2xl text-primary mb-4">Bistrot Le Bafing</div>
+<p class="font-sans text-sm text-on-surface-variant mb-8 max-w-xs leading-relaxed">Preserving the culinary soul of Mali thà travers des expériences culinaires artisanales modernes dans un environnement intemporels elegance.</p>
+<div class="flex gap-4">
+<a class="text-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
 </div>
 </div>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Arts Culinaires</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Spécialité du Chefties</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Menu Traditionnel</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Boissons Locales</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Espace Événementiel</a></li>
+</ul>
 </div>
-<div class="max-w-screen-2xl mx-auto mt-24 pt-8 border-t border-primary/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs font-body text-primary/40">© 2024 Resto Bafing by Sel &amp; Miel. Une Éphémère Sensorielle.</p>
-<div class="flex space-x-8">
-<a class="text-[10px] uppercase tracking-widest text-primary/60 hover:text-secondary" href="#">Confidentialité</a>
-<a class="text-[10px] uppercase tracking-widest text-primary/60 hover:text-secondary" href="#">Conditions</a>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Design d'Intérieur</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Durabilité</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Politique de Confidentialité</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Mentions Légales</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="font-bold uppercase tracking-widest text-xs text-primary mb-6">Newsletter</h4>
+<p class="text-on-surface-variant text-sm mb-6">Join our circle for seasonal menu updates.</p>
+<div class="flex border-b border-primary/30 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-on-surface-variant/40" placeholder="Your Email Address" type="email">
+<button class="text-primary hover:translate-x-1 transition-transform"><span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="max-w-screen-2xl mx-auto mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="tracking-tight text-xs text-on-surface-variant">© 2026 Bistrot Restaurant Le Bafing Bamako. Crafted with Héritage.</p>
+<div class="flex gap-8 text-xs tracking-widest uppercase font-bold text-primary">
+<span>BAMAKO</span>
+<span>MALI</span>
 </div>
 </div>
 </footer>
